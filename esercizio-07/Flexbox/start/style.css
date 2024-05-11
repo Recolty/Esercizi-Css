@@ -41,11 +41,12 @@ a {
     margin-bottom: 30px;
     font-size: 17px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
     color: #2b2bb2;
-    transition: 0.3s;
+    
 }
 
 .footer {
