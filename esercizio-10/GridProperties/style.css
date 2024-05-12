@@ -1,6 +1,9 @@
 body {
   width: 60em;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 1px 1px 3px gray;
 }
 
 section {
@@ -9,27 +12,39 @@ section {
 }
 
 #green {
-  background-color: #8ffda7;
+  background-color: #c0f8cc;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 #orange {
-  background-color: #ffc788;
+  background-color: #f9dbba;
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 #yellow {
-  background-color: #ffff92;
+  background-color: #ffffc0;
+  grid-row: 2;
 }
 
 #red {
-  background-color: #ff919c;
+  background-color: #fcb4bb;
+  grid-row: 2;
 }
 
 #blue {
-  background-color: #98d2ff;
+  background-color: #a9d7fa;
+  grid-row: 2;
+  grid-row-end: 4;
 }
 
 ul {
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 li {
