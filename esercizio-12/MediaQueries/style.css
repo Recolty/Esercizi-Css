@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 350px;
+  height: fit-content;
+  font-family: Verdana, sans-serif;
+  margin: 20px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  background-color: #b4b4b4;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  align-self: flex-start;
+  margin: 5px 10px 5px 5px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.text {
+  margin: 5px 0px 5px 0px;
+  font-weight: 300;
+}
+
+.text p:first-child {
+  color: #161616;
+  font-size: 15px;
+}
+
+.text p:last-child {
+  font-size: 10px;
+  color: #e9e9e9;
+  font-weight: 300;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  right: 0;
+  margin: 10px;
+}
+
+.small-circle {
+  height: 5px;
+  width: 5px;
+  background-color: #393939;
+  border-radius: 50%;
+}
+
+.cat {
+  height: 250px;
+  object-fit: cover;
+}
+
+.cat img {
+  width: 350px;
+}
+
+.cat-1 {
+    height: 100%;
+}
+
+.cat-2 {
+  height: 100%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: #f2f2f2;
+  align-items: flex-start;
+}
+
+.icons svg {
+  height: 17px;
+  width: 10%;
+  fill: #3d4452;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.icons svg path {
+  stroke: #3d4452;
+  stroke-width: 40px;
+}
+
+.caption {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 12px;
+}
+
+.caption p {
+  margin: 0px 10px 40px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

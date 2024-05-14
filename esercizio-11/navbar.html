@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="navbar">Navbar</p>
+            <input id="hamburger-menu" type="checkbox" />
+            <label class='hm-button-container' for="hamburger-menu">
+                <div class='hm-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="navbar.html" class="home">Home</a></li>
+                <li><a href="page1.html">Link</a></li>
+                <li><label for="dropdown"></label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="">Dropdown</option>
+                        <option value="">Dropdown1</option>
+                        <option value="">Dropdown2</option>
+                    </select>
+                </li>
+
+                <li><a href="" class="disabled">Disabled</a></li>
+                <li>
+                    <form action="demo.php" method="get">
+                        <label for="search" class="search">
+                            <input type="search" name="search" id="search" placeholder="Search" />
+                            <button class="search" type="submit">Search</button>
+                        </label>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
